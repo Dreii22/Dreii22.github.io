@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Scholarships - ScholarshipMS</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<aside class="sidebar">
+  <h2>ScholarshipMS</h2>
+  <a class="nav-link" href="index.html">Dashboard</a>
+  <a class="nav-link" href="scholarships.html">Scholarships</a>
+  <a class="nav-link" href="applications.html">Applications</a>
+  <a class="nav-link" href="applicants.html">Applicants</a>
+  <a class="nav-link" href="reports.html">Reports</a>
+  <hr style="border-color: rgba(255,255,255,0.06); margin:12px 0" />
+  <a class="nav-link" href="javascript:logout()">Sign Out</a>
+</aside>
+
+<header class="header">Scholarships</header>
+
+<main class="content">
+  <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px;">
+    <h3>Scholarship List</h3>
+    <button class="btn-primary" onclick="placeholder('Add Scholarship')">+ Add Scholarship</button>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Name</th><th>Description</th><th>Action</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mayor Liza Scholarship</td>
+          <td>For students with good grades in Balayan.</td>
+          <td><button onclick="placeholder('Edit Scholarship')">Edit</button></td>
+        </tr>
+        <tr>
+          <td>Gov. Vilma Scholarship</td>
+          <td>For students with high grades in Batangas.</td>
+          <td><button onclick="placeholder('Edit Scholarship')">Edit</button></td>
+        </tr>
+        <tr>
+          <td>Athlete Scholarship</td>
+          <td>For outstanding athletic students.</td>
+          <td><button onclick="placeholder('Edit Scholarship')">Edit</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Applicants - ScholarshipMS</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<aside class="sidebar">
+  <h2>ScholarshipMS</h2>
+  <a class="nav-link" href="index.html">Dashboard</a>
+  <a class="nav-link" href="scholarships.html">Scholarships</a>
+  <a class="nav-link" href="applications.html">Applications</a>
+  <a class="nav-link" href="applicants.html">Applicants</a>
+  <a class="nav-link" href="reports.html">Reports</a>
+  <hr style="border-color: rgba(255,255,255,0.06); margin:12px 0" />
+  <a class="nav-link" href="javascript:logout()">Sign Out</a>
+</aside>
+
+<header class="header">Applicants</header>
+
+<main class="content">
+  <div class="controls">
+    <input type="text" id="applicantSearch" data-table-search="applicantsTable" placeholder="Search applicants..." />
+    <button class="btn-primary" onclick="placeholder('Add Applicant')">+ Add</button>
+  </div>
+
+  <div class="table-wrap">
+    <table id="applicantsTable">
+      <thead>
+        <tr><th>Name</th><th>Date Registered</th><th>Program</th><th>Status</th><th>Action</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Gekko Mann</td>
+          <td>06-24-2025</td>
+          <td>Architecture</td>
+          <td>Approved</td>
+          <td><button onclick="placeholder('Edit Applicant')">Edit</button></td>
+        </tr>
+        <tr>
+          <td>Gumayerpy</td>
+          <td>07-19-2025</td>
+          <td>IT</td>
+          <td>Approved</td>
+          <td><button onclick="placeholder('Edit Applicant')">Edit</button></td>
+        </tr>
+        <tr>
+          <td>Allen Kalbo</td>
+          <td>08-29-2025</td>
+          <td>Engineering</td>
+          <td>Approved</td>
+          <td><button onclick="placeholder('Edit Applicant')">Edit</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

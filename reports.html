@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Reports - ScholarshipMS</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<aside class="sidebar">
+  <h2>ScholarshipMS</h2>
+  <a class="nav-link" href="index.html">Dashboard</a>
+  <a class="nav-link" href="scholarships.html">Scholarships</a>
+  <a class="nav-link" href="applications.html">Applications</a>
+  <a class="nav-link" href="applicants.html">Applicants</a>
+  <a class="nav-link" href="reports.html">Reports</a>
+  <hr style="border-color: rgba(255,255,255,0.06); margin:12px 0" />
+  <a class="nav-link" href="javascript:logout()">Sign Out</a>
+</aside>
+
+<header class="header">Reports</header>
+
+<main class="content">
+  <div class="controls">
+    <input type="text" id="reportSearch" data-table-search="reportsTable" placeholder="Search reports..." />
+    <select>
+      <option value="">Filter by Program</option>
+      <option>Architecture</option>
+      <option>Engineering</option>
+      <option>IT</option>
+    </select>
+    <select>
+      <option value="">Filter by Status</option>
+      <option>Pending</option>
+      <option>Approved</option>
+      <option>Rejected</option>
+    </select>
+    <button class="btn-primary" onclick="placeholder('Generate PDF')">Generate PDF</button>
+    <button class="btn-muted" onclick="placeholder('Generate Excel')">Generate Excel</button>
+  </div>
+
+  <div class="table-wrap">
+    <table id="reportsTable">
+      <thead>
+        <tr><th>Applicant</th><th>Program</th><th>Status</th><th>Date</th><th>Action</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Juan Dela Cruz</td><td>Architecture</td><td>Pending</td><td>06-21-2025</td>
+          <td><button onclick="placeholder('Download Report')">Download</button></td>
+        </tr>
+        <tr>
+          <td>Gumayerpy</td><td>IT</td><td>Approved</td><td>07-19-2025</td>
+          <td><button onclick="placeholder('Download Report')">Download</button></td>
+        </tr>
+        <tr>
+          <td>Allen Kalbo</td><td>Engineering</td><td>Approved</td><td>08-29-2025</td>
+          <td><button onclick="placeholder('Download Report')">Download</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

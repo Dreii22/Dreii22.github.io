@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Applications - ScholarshipMS</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<aside class="sidebar">
+  <h2>ScholarshipMS</h2>
+  <a class="nav-link" href="index.html">Dashboard</a>
+  <a class="nav-link" href="scholarships.html">Scholarships</a>
+  <a class="nav-link" href="applications.html">Applications</a>
+  <a class="nav-link" href="applicants.html">Applicants</a>
+  <a class="nav-link" href="reports.html">Reports</a>
+  <hr style="border-color: rgba(255,255,255,0.06); margin:12px 0" />
+  <a class="nav-link" href="javascript:logout()">Sign Out</a>
+</aside>
+
+<header class="header">Applications</header>
+
+<main class="content">
+  <div class="controls">
+    <input type="text" id="appSearch" data-table-search="appsTable" placeholder="Search applications..." />
+    <select>
+      <option value="">All Status</option>
+      <option>Pending</option>
+      <option>Approved</option>
+      <option>Rejected</option>
+    </select>
+    <button class="btn-primary" onclick="placeholder('Apply Filter')">Apply</button>
+  </div>
+
+  <div class="table-wrap">
+    <table id="appsTable">
+      <thead>
+        <tr><th>Applicant</th><th>Date</th><th>Program</th><th>Status</th><th>Action</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Juan Dela Cruz</td>
+          <td>06-21-2025</td>
+          <td>Architecture</td>
+          <td>Pending</td>
+          <td><button onclick="placeholder('View Application')">View</button></td>
+        </tr>
+        <tr>
+          <td>Allen Emerson</td>
+          <td>07-14-2025</td>
+          <td>Engineering</td>
+          <td>Pending</td>
+          <td><button onclick="placeholder('View Application')">View</button></td>
+        </tr>
+        <tr>
+          <td>Allen Kalbo</td>
+          <td>08-23-2025</td>
+          <td>IT</td>
+          <td>Approved</td>
+          <td><button onclick="placeholder('View Application')">View</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
