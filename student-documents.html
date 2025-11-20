@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Documents - Scholarship Management System</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <h2>Lyceum of Southern Luzon, Inc.</h2>
+      <p class="subtitle">Student Portal</p>
+    </div>
+    <nav class="main-nav">
+      <a href="student-dashboard.html">Dashboard</a>
+      <a href="student-applications.html">My Applications</a>
+      <a href="student-documents.html" class="active">Documents</a>
+      <a href="student-login.html" id="signout-link-3">Sign-out</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section>
+      <h1>Documents</h1>
+      <p class="muted">Upload required documents and see status.</p>
+
+      <form id="doc-upload-form" class="doc-form" novalidate>
+        <label for="doc-type">Document Type</label>
+        <select id="doc-type" required>
+          <option value="">Select document</option>
+          <option value="grades">1 sem all grades</option>
+          <option value="coi">Certificate of Indigency</option>
+          <option value="enrollment">Certificate of Enrollment</option>
+        </select>
+        <div class="field-note" id="err-doc-type"></div>
+
+        <label for="doc-file">File (PDF)</label>
+        <input id="doc-file" type="file" accept="application/pdf" required>
+        <div class="field-note" id="err-doc-file"></div>
+
+        <button class="btn" type="submit">Upload Document</button>
+      </form>
+
+      <h2 class="mt-24">Submitted Documents</h2>
+      <ul id="submitted-list" class="list"></ul>
+    </section>
+  </main>
+
+  <!-- link to the PDF UI spec you uploaded (local path) -->
+  <footer class="footer-muted">
+    UI spec: <a href="/mnt/data/SCHOLARSHIP MANAGEMENT SYSTEM UI.pdf" target="_blank">SCHOLARSHIP MANAGEMENT SYSTEM UI.pdf</a>
+  </footer>
+
+  <script src="js/student.js"></script>
+</body>
+</html>

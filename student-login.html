@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Student Login - Scholarship Management System</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <h2>Lyceum of Southern Luzon, Inc.</h2>
+      <p class="subtitle">Balayan Campus — Scholarship Management System</p>
+    </div>
+  </header>
+
+  <main class="auth-page">
+    <div class="auth-card">
+      <h1>Student Login</h1>
+      <form id="student-login-form" novalidate>
+        <label for="s-username">Username</label>
+        <input id="s-username" name="username" type="text" required>
+        <div class="field-note" id="err-username"></div>
+
+        <label for="s-password">Password</label>
+        <input id="s-password" name="password" type="password" required minlength="6">
+        <div class="field-note" id="err-password"></div>
+
+        <button type="submit" class="btn">Sign in</button>
+      </form>
+
+      <p class="muted">Don't have an account? <a href="student-register.html">Create Account</a></p>
+
+      <p class="muted">Switch to <a href="index.html">Admin Login</a></p>
+    </div>
+  </main>
+
+  <script src="js/student.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>My Applications - Scholarship Management System</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <h2>Lyceum of Southern Luzon, Inc.</h2>
+      <p class="subtitle">Student Portal</p>
+    </div>
+    <nav class="main-nav">
+      <a href="student-dashboard.html">Dashboard</a>
+      <a href="student-applications.html" class="active">My Applications</a>
+      <a href="student-documents.html">Documents</a>
+      <a href="student-login.html" id="signout-link-2">Sign-out</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section>
+      <h1>My Applications</h1>
+      <div class="controls">
+        <input id="app-search" placeholder="Search by scholarship or status">
+        <select id="filter-status">
+          <option value="">All statuses</option>
+          <option>Pending</option>
+          <option>Approved</option>
+          <option>Rejected</option>
+        </select>
+      </div>
+
+      <table class="table" id="applications-table">
+        <thead>
+          <tr>
+            <th>Application ID</th>
+            <th>Scholarship</th>
+            <th>Date</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="js/student.js"></script>
+</body>
+</html>

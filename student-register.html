@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Student Register - Scholarship Management System</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <h2>Lyceum of Southern Luzon, Inc.</h2>
+      <p class="subtitle">Balayan Campus — Scholarship Management System</p>
+    </div>
+  </header>
+
+  <main class="auth-page">
+    <div class="auth-card">
+      <h1>Create Student Account</h1>
+      <form id="student-register-form" novalidate>
+        <div class="grid-2">
+          <div>
+            <label for="firstName">First Name</label>
+            <input id="firstName" name="firstName" type="text" required>
+            <div class="field-note" id="err-firstName"></div>
+          </div>
+          <div>
+            <label for="lastName">Last Name</label>
+            <input id="lastName" name="lastName" type="text" required>
+            <div class="field-note" id="err-lastName"></div>
+          </div>
+        </div>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+        <div class="field-note" id="err-email"></div>
+
+        <label for="birthdate">Birthdate</label>
+        <input id="birthdate" name="birthdate" type="date" required>
+        <div class="field-note" id="err-birthdate"></div>
+
+        <label for="reg-username">Username</label>
+        <input id="reg-username" name="username" type="text" required minlength="4">
+        <div class="field-note" id="err-reg-username"></div>
+
+        <label for="reg-password">Password (min 6 chars)</label>
+        <input id="reg-password" name="password" type="password" required minlength="6">
+        <div class="field-note" id="err-reg-password"></div>
+
+        <label>
+          <input id="updates" name="updates" type="checkbox">
+          Receive updates by email
+        </label>
+
+        <button type="submit" class="btn">Create Account</button>
+      </form>
+
+      <p class="muted">Already have an account? <a href="student-login.html">Sign in</a></p>
+      <p class="muted">Switch to <a href="index.html">Admin Login</a></p>
+    </div>
+  </main>
+
+  <script src="js/student.js"></script>
+</body>
+</html>

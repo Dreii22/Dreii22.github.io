@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Student Dashboard - Scholarship Management System</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <h2>Lyceum of Southern Luzon, Inc.</h2>
+      <p class="subtitle">Balayan Campus — Student Portal</p>
+    </div>
+    <nav class="main-nav">
+      <a href="student-dashboard.html" class="active">Dashboard</a>
+      <a href="student-applications.html">My Applications</a>
+      <a href="student-documents.html">Documents</a>
+      <a href="student-login.html" id="signout-link">Sign-out</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="welcome">
+      <h1>Welcome, <span id="student-name">Student</span>!</h1>
+      <p class="muted">Student dashboard overview</p>
+    </section>
+
+    <section class="summary-cards">
+      <div class="card">
+        <h3>Total Scholarships</h3>
+        <p class="big" id="total-scholarships">0</p>
+      </div>
+      <div class="card">
+        <h3>My Applications</h3>
+        <p class="big" id="my-applications-count">0</p>
+      </div>
+      <div class="card">
+        <h3>Submitted Documents</h3>
+        <p class="big" id="submitted-docs-count">0</p>
+      </div>
+    </section>
+
+    <section class="recent">
+      <h2>Recent Scholarships</h2>
+      <div id="scholarship-list" class="list"></div>
+    </section>
+  </main>
+
+  <script src="js/student.js"></script>
+</body>
+</html>
